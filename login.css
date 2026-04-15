@@ -1,0 +1,191 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #000;
+}
+
+.app {
+  max-width: 350px;
+  margin: auto;
+  height: 100vh;
+  background: linear-gradient(to bottom, #ff1e1e, #b30000);
+  color: white;
+  padding: 15px;
+  box-sizing: border-box;
+  position: relative;
+
+  /* overflow-y: auto;   */
+}
+
+.app {
+  padding-bottom: 80px; /* 👈 add */
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo section */
+.logo-section {
+  display: flex;
+  align-items: flex-start; /* 👈 important */
+  gap: 10px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+/* Text alignment fix */
+.text-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-section h2 {
+  margin: 0;
+  line-height: 1;
+}
+
+.bank-name {
+  font-size: 10px;
+  margin: 2px 0 0 0;
+  color: #ffdede;
+}
+
+.bank-name {
+  font-size: 10px;
+  margin: 0;
+  color: #ffdede;
+}
+
+/* Exit button */
+.exit {
+  background: #4a4aff;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+/* Register */
+.register {
+  display: block;
+  margin: 10px auto;
+  background: #4a4aff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  color: white;
+}
+
+/* Welcome */
+.welcome {
+  text-align: center;
+}
+
+/* MPIN */
+.mpin-box {
+  background: rgba(0,0,0,0.3);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* dots */
+.dots span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: white;
+  margin: 5px;
+  border-radius: 50%;
+}
+
+/* keypad */
+.keypad {
+  display: none;
+  position: fixed;
+  bottom: 0;
+
+  left: 50%;
+  transform: translateX(-50%); /* 👈 center */
+
+  width: 350px; /* 👈 app width ki match */
+
+  background: white;
+  padding: 15px;
+  border-radius: 15px 15px 0 0;
+
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+
+  box-shadow: 0 -5px 15px rgba(0,0,0,0.3); /* 👈 premium look */
+}
+
+.keypad.show {
+  display: grid;
+}
+.keypad button {
+  padding: 15px;
+  border-radius: 12px;
+  border: none;
+  background: #f2f2f2;
+  font-size: 16px;
+  font-weight: bold;
+}
+.keypad {
+  z-index: 10; /* 👈 keypad always top */
+}
+
+/* fingerprint */
+.fingerprint {
+  text-align: center;
+  font-size: 45px;
+  margin: 20px 0;
+}
+/* Options */
+.options {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.option {
+  background: rgba(0,0,0,0.3);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Bottom Nav */
+.bottom-nav {
+  position: fixed; /* 👈 change */
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 350px; /* 👈 same width */
+
+  background: white;
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+
+  z-index: 5;
+}
+
+.bottom-nav div {
+  text-align: center;
+  font-size: 12px;
+}
+
+#message {
+  margin-top: 10px;
+  font-size: 14px;
+}

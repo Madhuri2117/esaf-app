@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+
+  <!-- SAME CSS -->
+  <link rel="stylesheet" href="login.css">
+
+  <!-- EXTRA CSS -->
+  <link rel="stylesheet" href="dashboard.css">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+<div class="app dashboard">
+
+  <!-- Header SAME STYLE -->
+  <div class="header">
+
+  <div class="left-section">
+    <!-- Menu icon first -->
+    <span class="material-icons menu">menu</span>
+
+    <!-- Logo + Text -->
+    <div class="logo-section">
+      <img src="esaf.png" class="logo"/>
+      <div class="text-section">
+        <h2>ESAF</h2>
+        <p class="bank-name">ESAF Small Finance Bank</p>
+      </div>
+    </div>
+  </div>
+<span class="material-icons logout" onclick="logout()">logout</span>
+</div>
+
+  <!-- Username -->
+  <h3 class="welcome">Hi, Mr. Shaik Usman</h3>
+
+  <!-- Account Card -->
+  <div class="mpin-box">
+    <h4>My Savings Account</h4>
+
+    <p>
+      Account No: 
+      <span id="accNumber">XXXXXX1234</span>
+      <span class="material-icons eye" onclick="toggleAcc()">visibility</span>
+    </p>
+
+    <button onclick="showBalance()">View Balance</button>
+
+    <h2 id="balance" style="display:none;">₹ 3,97,000</h2>
+  </div>
+
+  <!-- Quick Actions -->
+<div class="quick-actions">
+
+  <div class="title">Joy of Banking</div>
+
+  <div class="actions-grid">
+    <div class="action">💼<p>Accounts</p></div>
+    <div class="action">💳<p>Payments</p></div>
+    <div class="action">🏦<p>Deposits</p></div>
+
+    <div class="action">📄<p>Cards</p></div>
+    <div class="action">💰<p>Loans</p></div>
+    <div class="action">👥<p>Beneficiary</p></div>
+  </div>
+
+  <div class="view-more">View more ⌄</div>
+
+</div>
+
+</div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+body {
+  /* background: #b30000; */
+  color: white;
+  font-family: Arial;
+}
+
+.app dashboard{
+    background: white;
+}
+
+.dashboard .dash-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dashboard .logo {
+  width: 40px;
+}
+
+.dashboard .account-card {
+  background: rgba(0,0,0,0.3);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* menu icon */
+.dashboard .menu {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* button styling improve */
+.dashboard .mpin-box button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  border-radius: 10px;
+  border: none;
+  background: #4a4aff;
+  color: white;
+}
+
+/* Quick Actions Box */
+.quick-actions {
+  background: rgba(255,255,255,0.15);
+  border-radius: 20px;
+  padding: 15px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Title */
+.quick-actions .title {
+  background: #3b3bff;
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+/* Grid */
+.actions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+/* Each item */
+.action {
+  background: rgba(255,255,255,0.2);
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* Icons */
+.action p {
+  margin: 5px 0 0 0;
+  font-size: 12px;
+}
+
+/* View more */
+.view-more {
+  margin-top: 10px;
+  font-size: 12px;
+  background: #eee;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 15px;
+  display: inline-block;
+}
+
+/* Header layout */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Left section (menu + logo) */
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Menu icon */
+.menu {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* logout icon */
+.logout {
+  font-size: 28px;
+  cursor: pointer;
+}

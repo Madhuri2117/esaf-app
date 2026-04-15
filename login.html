@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- Header -->
+  <div class="header">
+  
+  <div class="logo-section">
+    <img src="esaf.png" class="logo"/>
+    
+    <div class="text-section">
+      <h2>ESAF</h2>
+      <p class="bank-name">ESAF Small Finance Bank</p>
+    </div>
+  </div>
+
+  <button class="exit">Exit ✕</button>
+
+</div>
+
+  <button class="register">Register as Another User</button>
+
+  <!-- Greeting -->
+  <h3 class="welcome">Hi, Mr. Shaik Usman</h3>
+
+  <!-- MPIN Box -->
+  <div class="mpin-box">
+    <p>MPIN</p>
+    <div class="dots" onclick="openKeypad()">
+      <span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <a href="#">Forgot MPIN</a>
+ <p id="message"></p>
+
+  </div>
+
+  <!-- Fingerprint -->
+<div class="fingerprint">👆</div>
+
+<div class="keypad" id="keypad">
+  <button onclick="press(1)">1</button>
+  <button onclick="press(2)">2</button>
+  <button onclick="press(3)">3</button>
+
+  <button onclick="press(4)">4</button>
+  <button onclick="press(5)">5</button>
+  <button onclick="press(6)">6</button>
+
+  <button onclick="press(7)">7</button>
+  <button onclick="press(8)">8</button>
+  <button onclick="press(9)">9</button>
+
+  <button onclick="clearPin()">⌫</button>
+  <button onclick="press(0)">0</button>
+  <button onclick="submitPin()">✔</button>
+</div>
+
+  <!-- Options -->
+  <div class="options">
+    <div class="option">📞<p>Contact Us</p></div>
+    <div class="option">💰<p>Apply For Loans</p></div>
+    <div class="option">🏦<p>Digital Account</p></div>
+    <div class="option">⋯<p>More</p></div>
+  </div>
+
+  <!-- Bottom Menu -->
+  <div class="bottom-nav">
+    <div>🏠<p>Home</p></div>
+    <div>▶️<p>Demo Video</p></div>
+    <div>✔️<p>Apply Now</p></div>
+    <div>📍<p>Branch Locator</p></div>
+  </div>
+
+</div>
+
+</body>
+</html>
+
+<script src="login.js"></script>
+
+</body>
+</html>
